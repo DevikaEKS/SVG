@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -10,18 +11,37 @@ export default function Footer() {
         {/* Brand Info */}
         <div className="footer-section brand">
           <h2>⚡ Electcare</h2>
-         
+          <p>
+            <a href="mailto:info@svgelectric.com" className="footer-contact">
+              info@svgelectric.com
+            </a>
+          </p>
+          <p>
+            <a href="tel:+918870719804" className="footer-contact">
+             +918870719804
+            </a>
+          </p>
         </div>
 
         {/* Links */}
         <div className="footer-section links">
           <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+    
+         
+            <Link to="/" className="nav-link">
+            <p>Home</p>
+          </Link>
+          <Link to="/about" className="nav-link">
+            <p>About Us</p>
+          </Link>
+          <Link to="/services" className="nav-link">
+            <p>Services</p>
+          </Link>
+          <Link to="/contact" className="nav-link">
+            <p>Contact</p>
+          </Link>
+           
+        
         </div>
 
         {/* Social Icons */}
@@ -35,7 +55,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-     
     </footer>
   );
 }

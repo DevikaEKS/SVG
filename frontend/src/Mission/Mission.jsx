@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Mission.css";
-
+import moonimg from "../assets/moon.jpg";
 const Mission = () => {
   const [scrollPercent, setScrollPercent] = useState(0);
   const missionRef = useRef(null);

@@ -16,11 +16,10 @@ export default function CardsOverlay() {
    
     <div className="cards-container ">
          <h1 className="services-title text-center">Electcare Industries</h1>
-
       {cards.map((card, index) => (
        <div
   key={card.id}
-  className="card"
+  className="card1"
   style={{ backgroundColor: card.color, zIndex: cards.length - index }}
 >
   <h1>{card.text}</h1>

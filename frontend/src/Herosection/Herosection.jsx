@@ -1,24 +1,4 @@
 
-// import React from "react";
-// import "./Herosection.css";
-
-// export default function Herosection() {
-//   return (
-//     <section className="hero">
-//       <div className="hero-overlay">
-//         <div className="hero-content">
-//           <h1>Welcome to <span>Electcare</span></h1>
-//           <h2>⚡Power Your Future </h2>
-//           <p>
-//             Expert support for electrification, backed by timely
-//             services and genuine components.
-//           </p>
-//           <button className="hero-btn">EXPLORE</button>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 import React from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
